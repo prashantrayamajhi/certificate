@@ -1,0 +1,203 @@
+@page {
+  size: A4;
+  margin: 8mm;
+  size: 210mm 287mm;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Heuristica";
+  max-width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.container .border-first {
+  border: 1mm solid #0d3564;
+}
+
+.container .border-first .border-pattern {
+  position: relative;
+  border: 30px solid transparent;
+  padding: 0rem;
+  /* http://www.heropatterns.com/ */
+  background-color: #0d3564;
+  -o-border-image: url(Untitled.png);
+     border-image: url(Untitled.png);
+  /*border-image: url(image.png) 27 / 36px 28px 18px 8px / 18px 14px 9px 4px  round;*/
+  border-image-slice: 187 176;
+  border-image-width: 39px;
+  /*border-image-outset: 1000;*/
+  border-image-repeat: repeat;
+}
+
+.container .border-first .border-pattern::after {
+  left: auto;
+  right: -30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+}
+
+.container .border-first .border-pattern .content {
+  left: 10mm;
+  top: 10mm;
+  background: white;
+  padding: 1px;
+}
+
+.container .border-first .border-pattern .content .inner-content {
+  border: 1mm solid #0d3564;
+  padding: 8mm;
+}
+
+.container .border-first .border-pattern .content .inner-content .watermark {
+  position: absolute;
+  width: 50rem;
+  height: 30rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  left: 50%;
+  top: 60%;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+  opacity: 0.2;
+}
+
+.container .header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #2d2572;
+}
+
+.container .header .subHeading {
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .header .subHeading .logo {
+  width: 7rem;
+  height: 7rem;
+}
+
+.container .header .subHeading .meta {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.container .header .subHeading .meta p {
+  margin-bottom: 0.3rem;
+}
+
+.container .header .subHeading .studentImage {
+  width: 8rem;
+  height: 8rem;
+}
+
+.container .character {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  color: #2d2572;
+}
+
+.container .details {
+  margin-top: 2rem;
+}
+
+.container .details p {
+  line-height: 2.2;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.container .details span {
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1px dotted blue;
+  padding: 0 1rem 0.05rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.container section {
+  margin-top: 2rem;
+}
+
+.container section h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #2d2572;
+}
+
+.container section .table {
+  margin-top: 2rem;
+  color: #2d2572;
+}
+
+.container section .table .item {
+  margin-top: 0.5rem;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 700;
+}
+
+.container section .table .value {
+  display: inline-block;
+}
+
+.container section .table .title {
+  display: inline-block;
+}
+
+.container .footer {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #2d2572;
+}
+
+.container .footer .item {
+  text-align: center;
+  font-weight: 700;
+}
+
+.container .footer .item .signature {
+  margin-bottom: 0.5rem;
+}
+/*# sourceMappingURL=index.css.map */
