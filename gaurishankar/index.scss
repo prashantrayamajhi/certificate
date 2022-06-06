@@ -88,7 +88,7 @@ body {
     .subHeading {
       width: 90%;
       margin: auto;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       display: flex;
       justify-content: space-between;
       // align-items: flex-start;
@@ -104,8 +104,9 @@ body {
         }
       }
       .studentImage {
-        width: 8rem;
-        height: 8rem;
+        width: 6.5rem;
+        height: 6.5rem;
+        border: 2px solid gray;
       }
     }
   }
